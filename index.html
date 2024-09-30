@@ -1,6 +1,90 @@
 <!DOCTYPE html>
 <html>
+            <link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">
+    <script src="" type="text/javascript"></script>
+        <script src="" type="text/javascript"></script>
+            <script src="" type="text/javascript"></script>
+        </head>
+<body>
+        <style type="text/css">
+html {
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+height: auto;
+width: auto;
+background-color: #000000; /* Warna hitam */
 
+color: #fff;
+text-align: center;
+font-family: "Kelly Slab", sans serif;
+margin: 0;
+font-weight: 60;
+height: 60vh;
+}
+
+  .button-like {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Warna latar belakang */
+    color: #ffffff; /* Warna teks */
+    border: 2px solid #2980b9; /* Warna border */
+    border-radius: 15px;
+  }
+        </style>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rain Particles</title>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .rain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .drop {
+        position: absolute;
+        background: linear-gradient(to bottom, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0));
+        width: 2px;
+        height: 15px;
+        animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(100vh);
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="rain">
+        <!-- You can adjust the number of drops here -->
+        <div class="drop" style="left: 100%; animation-duration: 2s;"></div>
+        <div class="drop" style="left: 100%; animation-duration: 3s;"></div>
+        <div class="drop" style="left: 100%; animation-duration: 4s;"></div>
+        <!-- Add more drops as needed -->
+    </div>
+</body>
+</html>
+  
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
